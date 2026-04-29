@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucas Almeida's Photos</title>
+    <style>
+        @font-face {
+            font-family: Minhafonte;
+            src: url(Designer.otf);
+        }
+
+        body {
+            margin: 0;
+            background-color: #000000;
+            color: #d2c6c6;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        h1{
+            font-family: Minhafonte;
+        }
+
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 1rem;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            font-family: Minhafonte;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.75rem;
+            font-family: Minhafonte;
+            color: white;
+            margin-right: 4rem; 
+        }
+        header a:hover {
+      color: #ffffff;
+    }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        main h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            color: #111827;
+            text-align: center;
+            margin: 0 0 1.5rem;
+        }
+
+        .recent-works {
+            display: grid;
+            width: 100%;
+            gap: 1.5rem;
+            justify-items: center;
+        }
+
+        .recent-works img {
+            width: 100%;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .single-image {
+            grid-column: span 2; 
+            display: flex;
+            justify-content: center; 
+            width: 50%;
+        }
+
+        section.about-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        section.about-me .text-content h1 {
+            margin-bottom: 0.75rem;
+            text-align: center;
+            font-weight: 800;
+            font-size: 1.75rem;
+            color: white;
+        }
+
+        .button-container {
+            width: 100%;
+            margin-top: 1.75rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button-container button {
+            background-color: #969191;
+            color: #000000;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            user-select: none;
+        }
+
+        .button-container button:hover,
+        .button-container button:focus {
+            background-color: #ffffff;
+            transform: scale(1.05);
+        }
+
+       
+
+        footer p,
+        footer a {
+            color: #6b7280;
+            margin: 0.25rem 0;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        footer a:hover,
+        footer a:focus {
+            color: #969191;
+            outline: none;
+        }
+
+        p {
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-inner">
+                <div class="logo">Lucas Almeida</div>
+                <nav>
+                    <a href="/index.html">HOME PAGE</a>
+                    <a href="/ContactUs.html">CONTACT</a>
+                    <a href="/Prices.html">PRICES</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>RECENT WORKS</h1>
+            <div class="recent-works">
+                <img src="/src/img/Bailarina.png" alt="Bailarina" />
+                <img src="/src/img/EventoEmpresarial.png" alt="Eventos" />
+                <div class="single-image">
+                    <img src="/src/img/FotoExemplo3.avif" alt="Lake" />
+                </div>
+            </div>
+            <section class="about-me">
+                <div class="text-content">
+                    <h1>Lucas Almeida</h1>
+                    <p>My story with photography began when I was just 3 years old.<br />My beloved grandmother gave me a toy camera, and since then...</p>
+                    <div class="button-container">
+                        <button onclick="location.href='/WhoAmI.html'">Learn More</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Contact:</strong></p>
+            <p>Email: <a href="mailto:lucasalmeida.fotografia@email.com">lucasalmeida.fotografia@email.com</a></p>
+            <p>Phone: <a href="tel:+5511987654321">(11) 98765-4321</a></p>
+            <p>Social Media:</p>
+            <p>Instagram: <a href="https://instagram.com/lucas_almeidafotos">lucas_almeidafotos</a></p>
+            <p>Facebook: <a href="https://facebook.com/lucasalmeida_fotos">lucasalmeida_fotos</a></p>
+            <div class="button-container">
+                <button onclick="location.href='/ContactUs.html'">Contact Us</button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

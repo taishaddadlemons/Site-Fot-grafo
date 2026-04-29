@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+body {
+      margin: 0;
+      background: #000000;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    header {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 15px 0;
+      border-bottom: 1px solid #e5e7eb;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    header a {
+      color: #374151;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    header a:hover {
+      color: #ffffff;
+    }
+    main {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 3rem;
+      background: #000000;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(10, 10, 10, 0.07);
+      padding: 30px 40px;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      user-select: none;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    } 
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      color: #ffffff;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid #d1d5db;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #ffffff;
+      background: #050505;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+
+    }
+    textarea {
+      min-height: 100px;
+      max-height: 180px;
+    }
+    input[type="submit"] {
+      margin-top: 10px;
+      background: #ffffff;
+      color: #000000;
+      font-weight: 700;
+      font-size: 1.125rem;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+      background-color: #333333;
+      outline: none;
+      transform: scale(1.05);
+    }
+    li{
+        list-style-type: none;
+    }
+    </style>
+</head>
+<body>
+<header>
+    <a href="/index.html">HOME PAGE</a>
+    <a href="/ContactUs.html">CONTACT</a>
+    <a href="/Prices.html">PRICES</a>
+</header>
+<br>
+<main>
+    <h1>Contact us</h1>
+    <form action="/index.html">
+<li>
+    <div>
+            <label for="name">Name:</label>
+            <input type="text" id="nome" required placeholder="Write your name">
+        </div>
+</li>
+<br>
+<li>
+ <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required placeholder="Write your email">
+        </div>
+        <br>
+</li>
+<br>
+<li>
+<div>
+            <label for="Message">Message:</label>
+            <textarea id="Message" name="Mensagem" required placeholder="Write your message"></textarea>
+        </div>
+        
+</li>
+<li>
+    Plans:
+    <select id="plan" name="plan">
+        <option value="Portrait Perfection Plan">Party Plan</option>
+        <option value="Wedding Day Memories Plan">Party Plan</option>
+        <option value="Urban Explorer Plan">Model Plan</option>
+        <option value="Nature & Wildlife Adventure Plan">Nature Plan</option>
+        <option value="Product & Commercial Plan">Advertising Plan</option>
+    </select>
+</li>
+<br>
+<div>
+    
+            <input type="submit" value="Send">
+        </form>
+    </main>
+</body>
+</html>
